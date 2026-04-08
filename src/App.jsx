@@ -43,7 +43,6 @@ function App() {
             <Story />
             <Contact />
             <Footer />
-            <p className='text-[#000] text-center py-2'>Clone of <a className='underline' target='_blank' href="https://zentry.com/">Zentry</a></p>
         </>}
       </main>
     </>

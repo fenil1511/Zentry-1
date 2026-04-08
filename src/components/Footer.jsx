@@ -1,18 +1,34 @@
 import React from 'react'
-import { FaDiscord } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
+import { FaDiscord, FaGithub } from "react-icons/fa";
 
 function Footer() {
   return (
-    <footer className='w-full px-10 py-4 bg-[#5724FF] flex justify-between text-[#000] items-center flex-col gap-2 lg:flex-row lg:gap-0'>
-        <p>&copy; Nova 2025. All rights reserved</p>
-        <div className='flex gap-3'>
-          <FaDiscord className='cursor-pointer hover:text-white'/>
-          <a href="https://github.com/Ansh-Praj" target='_blank' className='cursor-pointer hover:text-white'>
-            <FaGithub/>
-          </a>
+    <footer className="w-full bg-black text-gray-400 px-6 py-8 border-t border-gray-800">
+      
+      <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        
+        {/* Left - Brand */}
+        <div className="text-center md:text-left">
+          <h1 className="text-lg font-semibold text-white tracking-wide">
+            YourBrand
+          </h1>
+          <p className="text-xs text-gray-500 mt-1">
+            Simple. Clean. Reliable.
+          </p>
         </div>
-        <p>Privacy Policy</p>
+
+        {/* Center - Navigation */}
+        <div className="flex gap-6 text-sm">
+          <a href="#" className="hover:text-white transition">About</a>
+          <a href="#" className="hover:text-white transition">Services</a>
+          <a href="#" className="hover:text-white transition">Contact</a>
+        </div>
+
+
+      </div>
+
+     
+
     </footer>
   )
 }
